@@ -1,7 +1,7 @@
 package com.mlt.api.common.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.mlt.api.common.constantes.DateFormatConstants;
+import com.mlt.api.common.domain.constantes.DateFormatConstants;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -21,5 +21,6 @@ public class MltMessage implements Serializable {
     @JsonFormat(pattern = DateFormatConstants.DATE_TIME_FORMAT)
     private LocalDateTime timestamp;
     private int status;
+    private String type;
 
 }
